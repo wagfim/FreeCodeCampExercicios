@@ -1,0 +1,71 @@
+body {
+	/*margin: 0;*/
+
+}
+.box {
+	border: solid black 5px;
+	text-align: center;
+}
+.yellow {
+	padding: 5px 10px;
+	color: black;
+	background-color: yellow;
+	
+	width: 700px;
+	height: 200px;
+	
+}
+
+.red {
+	margin: 10px 0;
+	padding: 20px;
+	background-color: red;
+	color: white;
+}
+
+.blue {
+	margin: 20px 0;
+	padding: 20px;
+	background-color: blue;
+	color: white;
+}
+
+/* FreeCodeCamp */
+
+h3 {
+	font-family: sans-serif;
+}
+.injected-text {
+	font-family: sans-serif;
+	margin-bottom: -25px;
+	text-align: center;
+}
+
+.yellow-box {
+    background-color: yellow;
+    padding: 10px;
+}
+
+.red-box {
+	font-family: sans-serif;
+	background-color: crimson;
+	color: #fff;
+	padding: 20px;
+}
+
+.blue-box {
+	font-family: sans-serif;
+	background-color: blue;
+	color: #fff;
+	padding: 20px;
+}
+
+/* Examples */
+.left-side {
+	display: inline;
+	float: left;
+}
+.right-side {
+	display: inline;
+	float: right;
+}
