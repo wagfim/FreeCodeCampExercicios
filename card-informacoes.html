@@ -9,6 +9,7 @@
             margin: 0;
             height: 20px;
             text-align: center;
+            font-size: 20px;
         }
         .fullCard {
             border: 1px solid #ccc;
@@ -17,12 +18,17 @@
             padding: 4px;
             width: 300px;
             font-family: sans-serif;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
         }
         .cardConteudo {
             padding: 10px;
         }
         .cardTexto p {
             text-align: justify;
+        }
+        .cardTexto ::selection {
+            background-color: #222;
+            color: white;
         }
 
         .cardTexto hr {
