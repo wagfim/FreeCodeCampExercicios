@@ -1,2 +1,2 @@
-# FreeCodeCampExercises
-Exercicios From FreeCodeCamp
+# FreeCodeCampExercicios
+Exercicios do curso FreeCodeCamp
