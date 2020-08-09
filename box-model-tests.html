@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testes de position do box model</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        h1 {
+            font-size: inherit;
+        }
+
+        h2 {
+            background-color: #ccc;
+        }
+
+        .padrao {
+            /*position: absolute;*/
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+        }
+
+        .vermelho {
+            background-color: rgba(255, 0, 0, 0.5);
+            /*background-color: red;*/
+        }
+
+        .verde {
+            background-color: green;
+        }
+
+        .azul {
+            background-color: blue;
+        }
+
+        .um {
+            background-color: skyblue;
+            position: absolute;
+        }
+
+        .dois {
+            background-color: slateblue;
+        }
+
+        .tres {
+            background-color: steelblue;
+        }
+
+        .parent {
+            /*height: 200px;*/
+            background-color: #009ef8;
+            padding: 5px;
+        }
+
+        .filha {
+            padding: 5px;
+        }
+
+        .filha-um {
+            background-color: #6ce978;
+        }
+
+        .filha-dois {
+            background-color: #fe8275;
+        }
+
+        .filha-tres {
+            background-color: #ff89e7;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Verificando tamanho padrão de algumas tags</h2>
+    <div>
+        <span>span - Lorem, ipsum dolor sit amet.</span>
+        <p>p - Lorem, ipsum dolor sit amet.</p>
+        <h1>h1 - Lorem, ipsum dolor sit amet.</h1>
+        <h6>h6 - Lorem, ipsum dolor sit amet.</h6>
+        <strong>strong - Lorem, ipsum dolor sit amet.</strong>
+        <span>span - Lorem, ipsum dolor sit amet.</span>
+    </div>
+    <h2>Experimentando com divs</h2>
+    <h3>Exemplo 1</h3>
+    <div class="parent">
+        Classe mãe
+        <div class="filha-um filha">Um</div>
+        <div class="filha-dois filha">Dois</div>
+        <div class="filha-tres filha">Três</div>
+    </div>
+    <hr>
+    <h3>Exemplo 2</h3>
+    <div class="padrao um">
+        <div class="box vermelho"></div>
+        <div class="box verde"></div>
+        <div class="box azul"></div>
+    </div>
+    <div class="padrao dois">
+        <div class="box vermelho"></div>
+        <div class="box verde"></div>
+        <div class="box azul"></div>
+    </div>
+    <div class="padrao tres">
+        <div class="box vermelho"></div>
+        <div class="box verde"></div>
+        <div class="box azul"></div>
+    </div>
+
+
+</body>
+
+</html>
