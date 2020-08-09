@@ -7,7 +7,9 @@
     <title>Coração feito em css</title>
 </head>
     <style>
-
+        body {
+            margin: 0;
+        }
         .base {
             width: 0px;
             height: 0px;
@@ -19,16 +21,91 @@
         .meio-esquerdo {
             width: 0px;
             height: 0px;
-            /*border-radius: 50%  50% 0 30%;*/
-            border-left: 10px solid transparent;
+            /*border-radius: 50%  50% 0 30%;
+            border-left: 10px solid transparent;*/
             border-left: 75px solid green;
-            border-right: 50px solid transparent;
-            border-top: 100px solid #f72153;
+            /*border-right: 50px solid transparent;*/
+            border-top: 100px solid #a72153; /*f72153 */
+            float: left;
         }
         .meio-centro {
             background-color: #f72153;
             width: 100px;
             height: 100px;
+            float: left;
+        }
+        .meio-direito {
+            width: 0px;
+            height: 0px;
+            /*border-radius: 50%  50% 0 30%;*/
+            border-left: 10px solid transparent;
+            border-left: 75px solid green;
+            border-right: 50px solid transparent;
+            border-top: 100px solid #d72153;
+        }
+
+        /*alternativo*/
+        :root {
+            --red: red;
+            --darkRed:  rgb(220, 0, 0);
+        }
+
+        .topo-coracao {
+            height: 100px;
+        }
+
+        .topo-direita {
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            border-radius: 100% 0 0 0 ;
+        }
+        
+        .metade {
+            border: 0;
+            height: 100px;
+        }        
+        .esquerda {
+            height: 0;
+            width: 0;
+            position: absolute;
+            border-left: 75px solid cyan;
+            border-top: 100px solid red;
+            border-right: 25px solid var(--darkRed);
+        }
+        .meio {
+            background-color: green;
+            left: 100px;
+            height: 100px;
+            width: 100px;
+            position: absolute;
+        }
+        .direita {
+            background-color: blue;
+            left: 200px;
+            height:0;
+            width: 0;
+            position: absolute;
+            border-left: 25px solid var(--darkRed);
+            border-top: 100px solid red;
+            border-right: 75px solid cyan;
+        }
+        .baseCoracao {
+            /*
+            height: 100px;
+            width: 200px;
+            
+            background-color: black;
+            position: absolute;
+            left: 50px;
+            */
+            height: 0;
+            width: 0;
+            position: absolute;
+            left: 75px;
+            border-top: 100px solid red;
+            border-left: 75px solid cyan;
+            border-right: 75px solid cyan;
         }
     </style>
 <body>
@@ -36,6 +113,20 @@
     <div class="meio-centro"></div>
     <div class="meio-direito"></div>
     <div class="base"></div>
+    <br>
+    <hr>
+    <h2>Alternativo</h2>
+    <div class="topo-coracao">
+        <div class="topo-direita"></div>
+        <div class="topo-meio"></div>
+        <div class="topo-esquerda"></div>
+    </div>
+    <div class="metade">
+        <div class="esquerda"></div>
+        <div class="meio"></div>
+        <div class="direita"></div>
+    </div>
+    <div class="baseCoracao"></div>
 </body>
 
 </html>
