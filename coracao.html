@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coração feito em css</title>
+</head>
+    <style>
+
+        .base {
+            width: 0px;
+            height: 0px;
+            border-left: 50px solid green;
+            border-right: 50px solid cyan;
+            border-top: 100px solid #f72153; 
+            margin-left: 75px;
+        }
+        .meio-esquerdo {
+            width: 0px;
+            height: 0px;
+            /*border-radius: 50%  50% 0 30%;*/
+            border-left: 10px solid transparent;
+            border-left: 75px solid green;
+            border-right: 50px solid transparent;
+            border-top: 100px solid #f72153;
+        }
+        .meio-centro {
+            background-color: #f72153;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+<body>
+    <div class="meio-esquerdo"></div>
+    <div class="meio-centro"></div>
+    <div class="meio-direito"></div>
+    <div class="base"></div>
+</body>
+
+</html>
