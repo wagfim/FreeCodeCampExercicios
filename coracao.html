@@ -49,18 +49,37 @@
             --red: red;
             --darkRed:  rgb(220, 0, 0);
         }
-
-        .topo-coracao {
+        .topo-linha {
             height: 100px;
+            width: 300px;
+            background-color: black;
         }
 
-        .topo-direita {
+        .topo-esquerda {
             height: 100px;
             width: 100px;
             background-color: red;
             border-radius: 100% 0 0 0 ;
+            position: absolute;
         }
-        
+        .topo-meio {
+            width: 0;
+            height: 0;
+            position: absolute;
+            left: 100px;
+            border-left: 50px solid red;
+            border-right: 50px solid red;
+            border-top: 100px solid transparent;
+        }
+        .topo-direita {
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            border-radius: 0 100% 0 0 ;
+            float: right;
+        }
+
+        /* metade \/ */
         .metade {
             border: 0;
             height: 100px;
@@ -74,14 +93,13 @@
             border-right: 25px solid var(--darkRed);
         }
         .meio {
-            background-color: green;
+            background-color: red;
             left: 100px;
             height: 100px;
             width: 100px;
             position: absolute;
         }
         .direita {
-            background-color: blue;
             left: 200px;
             height:0;
             width: 0;
@@ -116,10 +134,10 @@
     <br>
     <hr>
     <h2>Alternativo</h2>
-    <div class="topo-coracao">
-        <div class="topo-direita"></div>
-        <div class="topo-meio"></div>
+    <div class="topo-linha">
         <div class="topo-esquerda"></div>
+        <div class="topo-meio"></div>
+        <div class="topo-direita"></div>
     </div>
     <div class="metade">
         <div class="esquerda"></div>
